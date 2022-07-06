@@ -6,8 +6,8 @@
  */
 void positive_or_negative(int i)
 {
-printf("Enter a number: ");
-  
+i = 0;
+ 
 if (i < 0)
 printf("%d is negative\n", i);
 else if (i > 0)

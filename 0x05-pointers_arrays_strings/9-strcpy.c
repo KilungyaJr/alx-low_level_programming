@@ -13,7 +13,7 @@ int len, i;
 
 len = 0;
 
-while (scr[len] != '\0')
+while (src[len] != '\0')
 {
 len++;
 }

@@ -23,7 +23,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	tmp->prev = NULL;
 	tmp->next = *head;
 
-	if (!head)
+	if (*head)
 		(*head)->prev = tmp;
 	*head = tmp;
 

@@ -15,10 +15,10 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		if (ht->array[i] != NULL)
 		{
-			printf("First for loop\n");
+			/* printf("First for loop\n"); */
 			while (ht->array[i])
 			{
-				printf("Freeing\n");
+				/* printf("Freeing\n"); */
 				tmp = ht->array[i];
 				free(tmp->key);
 				tmp->key = NULL;
@@ -34,5 +34,5 @@ void hash_table_delete(hash_table_t *ht)
 	ht->array = NULL;
 	free(ht);
 	ht = NULL;
-	printf("Leaving\n");
+	/* printf("Leaving\n"); */
 }
